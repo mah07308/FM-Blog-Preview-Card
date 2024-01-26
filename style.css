@@ -1,7 +1,159 @@
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Global Styles */
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+}
+
+/* Card Styles */
+
+.blog-card {
+  background-color: var(--white);
+  max-width: 21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem;
+  border: 1px solid var(--black);
+  border-radius: 1.25rem;
+  box-shadow: 0.5rem 0.5rem;
+  padding: 1.5rem;
+}
+
+.blog-card__image {
+  border-radius: 0.625rem;
+}
+
+.blog-card__content {
+  margin: 1.5rem 0;
+}
+
+.content__category {
+  background-color: var(--yellow);
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.33em 1em;
+  border-radius: 0.333em;
+}
+
+.content__publish-date {
+  font-size: 0.75rem;
+  margin: 1em 0;
+}
+
+.content__title {
+  font-size: 1.25rem;
+}
+
+.content__title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.content__description {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--grey);
+}
+
+.blog-card__author {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  gap: 0.75rem;
+}
+
+.author__picture {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.author__name {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 1rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  /* color: hsl(228, 45%, 44%); */
+  color: var(--black);
+  font-weight: 800;
 }
