@@ -165,7 +165,8 @@ body {
 /* Footer */
 
 footer {
-  margin-top: 1rem;
+  position: fixed;
+  bottom: 1rem;
 }
 
 .attribution {
