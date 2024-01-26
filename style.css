@@ -76,7 +76,7 @@ body {
 
 .blog-card {
   background-color: var(--white);
-  max-width: 21rem;
+  max-width: 24rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
